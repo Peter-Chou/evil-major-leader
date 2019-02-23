@@ -29,7 +29,7 @@
 ;; Floor, Boston, MA 02110-1301, USA.
 
 ;;; Commentary:
-;;
+;; evil-major-leader acts as a complement to evil-leader package.
 
 ;;; Code:
 
