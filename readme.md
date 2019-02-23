@@ -10,7 +10,7 @@ Make sure [evil](https://github.com/emacs-evil/evil) and [evil-leader](https://g
 
 Put **evil-major-leader.el** into your load-path, then add following code in your init.el file.
 
-```lisp
+``` emacs-lisp
 (require 'evil-major-leader)
 ;; activate evil-major-leader-mode globally
 (global-evil-major-leader-mode)
@@ -20,7 +20,7 @@ Put **evil-major-leader.el** into your load-path, then add following code in you
 
 customize the shortcut trigger:
 
-```lisp
+``` emacs-lisp
 ;; mode key that you bind mode keymaps in evil-leader
 ;; by using evil-leader/set-key-for-mode function
 (setq evil-major-leader-mode-key "m") 
