@@ -1,10 +1,10 @@
-;;; evil-major-leader.el --- evil major leader mode    -*- lexical-binding: t; -*-
+;;; evil-major-leader.el --- provides a shortcut to reach evil-leader's mode keymap    -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2019 by Peter Chou
 
 ;; Author:  Peter Chou <2747244153@qq.com>
 ;; Homepage: https://github.com/Peter-Chou/evil-major-leader
-;; Version: 1.0.1
+;; Version: 1.0.2
 ;; Package-Requires: ((evil "0") (evil-leader "0.4.3"))
 ;; Keywords: lisp evil
 
