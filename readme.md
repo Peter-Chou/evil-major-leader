@@ -6,7 +6,7 @@ This minor mode provides a shortcut key to reach evil-leader's mode keymap.
 
 Make sure [evil](https://github.com/emacs-evil/evil) and [evil-leader](https://github.com/cofi/evil-leader) is installed
 
-# Install
+## Install
 
 Put **evil-major-leader.el** into your load-path, then add following code in your init.el file.
 
@@ -16,9 +16,9 @@ Put **evil-major-leader.el** into your load-path, then add following code in you
 (global-evil-major-leader-mode)
 ```
 
-# Customize
+## Customize
 
-customize the shortcut trigger:
+customize the shortcut key:
 
 ``` emacs-lisp
 ;; mode key that you bind mode keymaps in evil-leader
