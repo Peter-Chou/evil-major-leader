@@ -5,6 +5,7 @@
 ;; Author: Peter Chou <2747244153@qq.com>
 ;; URL: https://github.com/Peter-Chou/evil-major-leader
 ;; Version: 0.1
+;; Package-Version: 2019.0223
 ;; Package-Requires: ((emacs "24.4") (evil 1.2.14) (evil-leader 0.4.3))
 ;; Keywords: Evil, major leader
 
@@ -28,6 +29,7 @@
 ;; Floor, Boston, MA 02110-1301, USA.
 
 ;;; Commentary:
+;;
 
 ;;; Code:
 
