@@ -50,6 +50,11 @@
   :type 'string
   :group 'evil-major-leader)
 
+(defcustom evil-major-leader-insert-default-key "M-m"
+  "The <leader> key, used to access evil-leader's default keys."
+  :type 'string
+  :group 'evil-major-leader)
+
 (defun evil-major-leader/get-mode-key-ascii ()
   "get ascii of mode key"
   (aref evil-major-leader-mode-key 0))
@@ -68,11 +73,13 @@
   :init-value nil
   :keymap nil
   (let* ((no-prefix (read-kbd-macro evil-major-leader-default-key))
+	 (evil-insert--leader-key (read-kbd-macro evil-major-leader-insert-default-key))
 	 (mode-map (cdr (assoc (evil-major-leader/get-mode-key-ascii) (cdr (assoc major-mode evil-leader--mode-maps))))))
     (if evil-major-leader-mode
 	(progn
           (define-key evil-motion-state-local-map no-prefix mode-map)
-          (define-key evil-normal-state-local-map no-prefix mode-map)))))
+          (define-key evil-normal-state-local-map no-prefix mode-map)
+	  (define-key evil-insert-state-local-map evil-insert--leader-key evil-leader--default-map)))))
 
 ;;;###autoload
 (defun evil-major-leader/set-leader (key)
